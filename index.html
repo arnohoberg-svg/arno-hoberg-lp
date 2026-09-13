@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!--
+  Mova os arquivos para a mesma pasta do index.html e renomeie conforme abaixo:
+
+  logo.png    <- D:\ARNO\LOGO\AH.png
+  foto1.jpg   <- D:\ARNO\FOTOS PESSOAIS\FOTO PERFIL 01.jpg
+  foto2.jpg   <- D:\ARNO\FOTOS PESSOAIS\FOTO HOTMART.jpg
+  foto3.jpg   <- D:\ARNO\FOTOS PESSOAIS\FOTO CORRETOR.jpg
+  print1.jpg  <- D:\ARNO\CRIATIVOS\LP Gestor TP\POST _ PRINT.jpg
+  print2.jpg  <- D:\ARNO\CRIATIVOS\LP Gestor TP\POST _ PRINT_V02.jpg
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arno Hoberg | Tráfego Pago para Corretores e Imobiliárias</title>
+<meta name="description" content="Especialista em tráfego pago para corretores de imóveis e imobiliárias. Estrutura de anúncios que gera conversa qualificada no WhatsApp, direto pra você.">
+<meta property="og:title" content="Arno Hoberg | Tráfego Pago para Corretores e Imobiliárias">
+<meta property="og:description" content="Consiga mais oportunidades de negócio em menos tempo!">
+<meta property="og:type" content="website">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600&display=swap');
+
+  :root{
+    --bg:#0a0a0a;
+    --bg-alt:#111111;
+    --surface:#161616;
+    --border:#222222;
+    --orange:#E8650A;
+    --orange-hover:#FF7A1A;
+    --text:#FFFFFF;
+    --text-secondary:#A0A0A0;
+    --text-tertiary:#666666;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    font-weight:400;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{ max-width:100%; height:auto; display:block; }
+  a{ text-decoration:none; }
+
+  .display{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:-0.02em;
+    line-height:0.95;
+    margin:0;
+  }
+
+  .container{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+
+  .section{ padding:80px 0; position:relative; }
+  .section-alt{ background:var(--bg-alt); }
+  .border-top-orange{ border-top:1px solid var(--orange); }
+
+  .accent{ color:var(--orange); }
+
+  /* Reveal on scroll */
+  .reveal{ opacity:0; transform:translateY(40px); }
+  @media (prefers-reduced-motion: no-preference){
+    .reveal{ transition:opacity .6s ease, transform .6s ease; }
+  }
+  .reveal.visible{ opacity:1; transform:translateY(0); }
+
+  /* Buttons */
+  .btn{
+    display:inline-block;
+    background:var(--orange);
+    color:#000000;
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+    padding:18px 32px;
+    border-radius:2px;
+    border:none;
+    cursor:pointer;
+    transition:background .2s ease, box-shadow .2s ease;
+    width:100%;
+    text-align:center;
+  }
+  .btn:hover{
+    background:var(--orange-hover);
+    box-shadow:0 0 20px rgba(232,101,10,0.3);
+  }
+  @media (min-width:768px){
+    .btn{ width:auto; }
+  }
+
+  .fine-print{
+    color:var(--text-tertiary);
+    font-size:13px;
+    margin-top:14px;
+  }
+
+  /* Hero */
+  .hero{
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    background:var(--bg);
+    overflow:hidden;
+    padding-top:32px;
+    padding-bottom:60px;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-image:radial-gradient(circle, var(--orange) 1px, transparent 1px);
+    background-size:40px 40px;
+    opacity:0.06;
+    pointer-events:none;
+  }
+  .hero-logo{
+    position:relative;
+    z-index:2;
+    padding:0 20px;
+  }
+  .hero-logo img{ max-height:48px; }
+  .hero-body{
+    position:relative;
+    z-index:2;
+    flex:1;
+    display:flex;
+    align-items:center;
+    padding:40px 0;
+  }
+  .hero-grid{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    width:100%;
+  }
+  .hero-headline{
+    font-size:clamp(48px, 9vw, 92px);
+  }
+  .hero-sub{
+    color:rgba(255,255,255,0.8);
+    font-size:18px;
+    font-weight:500;
+    max-width:520px;
+    margin:24px 0 32px;
+  }
+  .hero-photo{ max-width:420px; margin:0 auto; }
+  @media (min-width:768px){
+    .hero-grid{
+      flex-direction:row;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .hero-text{ flex:1; max-width:600px; }
+    .hero-photo{ flex:1; margin:0; }
+  }
+
+  .photo-frame{
+    position:relative;
+    overflow:hidden;
+    border-radius:4px;
+  }
+  .photo-frame img{ filter:grayscale(1); width:100%; }
+  .photo-frame::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:var(--orange);
+    opacity:0.15;
+    mix-blend-mode:luminosity;
+  }
+
+  /* Stats */
+  .stats-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+  }
+  @media (min-width:768px){
+    .stats-grid{ grid-template-columns:repeat(3,1fr); }
+  }
+  .stat-number{
+    font-size:clamp(48px,7vw,72px);
+    color:var(--orange);
+  }
+  .stat-label{
+    color:var(--text-secondary);
+    text-transform:uppercase;
+    font-size:14px;
+    letter-spacing:0.04em;
+    margin-top:8px;
+  }
+
+  .prints-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:24px;
+    margin-top:60px;
+  }
+  @media (min-width:768px){
+    .prints-grid{ grid-template-columns:1fr 1fr; }
+  }
+  .print-card img{
+    border:1px solid var(--orange);
+    border-radius:4px;
+  }
+  .print-caption{
+    color:var(--text-secondary);
+    font-size:14px;
+    margin-top:12px;
+    text-align:center;
+  }
+
+  /* Problem section */
+  .problem-text{
+    text-align:center;
+    max-width:600px;
+    margin:0 auto;
+  }
+  .problem-headline{
+    font-size:clamp(36px,6vw,56px);
+    margin-bottom:24px;
+  }
+  .problem-body{
+    color:rgba(255,255,255,0.8);
+    font-size:17px;
+    white-space:pre-line;
+  }
+  .problem-highlight{
+    color:var(--orange);
+    font-weight:700;
+    margin-top:28px;
+    font-size:18px;
+  }
+
+  /* Process / steps */
+  .steps{
+    position:relative;
+    padding-left:28px;
+    border-left:1px solid var(--orange);
+    display:flex;
+    flex-direction:column;
+    gap:48px;
+  }
+  .step{ position:relative; }
+  .step::before{
+    content:'';
+    position:absolute;
+    left:-33px;
+    top:4px;
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background:var(--orange);
+    box-shadow:0 0 10px rgba(232,101,10,0.6);
+  }
+  .step-title{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:22px;
+    color:var(--orange);
+    margin:0 0 8px;
+  }
+  .step-body{
+    color:var(--text-secondary);
+    font-size:16px;
+    max-width:600px;
+  }
+
+  /* Bonus */
+  .bonus-card{
+    border:1px solid var(--orange);
+    border-radius:4px;
+    padding:40px;
+    box-shadow:0 0 20px rgba(232,101,10,0.15);
+    max-width:700px;
+    margin:0 auto;
+  }
+  .bonus-tag{
+    color:var(--orange);
+    text-transform:uppercase;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.08em;
+  }
+  .bonus-title{
+    font-size:clamp(28px,4vw,36px);
+    margin:12px 0 20px;
+  }
+  .bonus-body{
+    color:var(--text-secondary);
+    font-size:16px;
+    white-space:pre-line;
+  }
+
+  /* Investment */
+  .investment{ text-align:center; }
+  .price-old{
+    color:var(--text-tertiary);
+    text-decoration:line-through;
+    font-size:20px;
+  }
+  .price-new{
+    font-size:clamp(48px,8vw,72px);
+    color:var(--orange);
+    margin:8px 0;
+  }
+  .price-condition{
+    color:var(--text-secondary);
+    font-size:15px;
+    margin-bottom:40px;
+  }
+  .investment-list{
+    list-style:none;
+    padding:0;
+    margin:0 auto 40px;
+    max-width:520px;
+    text-align:left;
+  }
+  .investment-list li{
+    color:var(--text);
+    font-size:16px;
+    padding:10px 0;
+    border-bottom:1px solid var(--border);
+  }
+  .investment-list li::before{
+    content:'— ';
+    color:var(--orange);
+    font-weight:700;
+  }
+  .investment-note{
+    color:var(--text-tertiary);
+    font-size:13px;
+    margin-bottom:32px;
+  }
+
+  /* About */
+  .about-grid{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    align-items:center;
+  }
+  @media (min-width:768px){
+    .about-grid{ flex-direction:row; align-items:flex-start; }
+    .about-photo{ flex:1; }
+    .about-text{ flex:1.2; }
+  }
+  .about-photo{ max-width:380px; width:100%; }
+  .photo-desktop{ display:none; }
+  .photo-mobile{ display:block; }
+  @media (min-width:768px){
+    .photo-desktop{ display:block; }
+    .photo-mobile{ display:none; }
+  }
+  .about-name{
+    font-size:clamp(32px,5vw,44px);
+    margin-bottom:4px;
+  }
+  .about-role{
+    color:var(--text-secondary);
+    font-size:16px;
+    margin-bottom:20px;
+  }
+  .about-body p{
+    color:rgba(255,255,255,0.8);
+    font-size:16px;
+    margin:0 0 20px;
+  }
+  .about-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  .about-list li{
+    color:var(--text-secondary);
+    font-size:16px;
+    padding:8px 0;
+  }
+  .about-list li::before{
+    content:'— ';
+    color:var(--orange);
+    font-weight:700;
+  }
+
+  /* Final CTA */
+  .final-cta{
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .final-cta::before{
+    content:'';
+    position:absolute;
+    top:50%; left:50%;
+    width:800px; height:800px;
+    transform:translate(-50%,-50%);
+    background:radial-gradient(circle, rgba(232,101,10,0.18) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .final-headline{
+    font-size:clamp(40px,7vw,72px);
+    position:relative;
+    z-index:1;
+  }
+  .final-sub{
+    color:var(--text-secondary);
+    font-size:17px;
+    max-width:500px;
+    margin:20px auto 36px;
+    position:relative;
+    z-index:1;
+  }
+  .final-cta .btn{ position:relative; z-index:1; font-size:18px; padding:22px 44px; }
+
+  /* Footer */
+  footer{
+    background:var(--bg);
+    padding:32px 0;
+  }
+  .footer-inner{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    align-items:center;
+    text-align:center;
+  }
+  .footer-inner img{ max-height:28px; }
+  .footer-copy{
+    color:var(--text-tertiary);
+    font-size:13px;
+  }
+  @media (min-width:768px){
+    .footer-inner{
+      flex-direction:row;
+      justify-content:space-between;
+      text-align:left;
+    }
+  }
+
+  /* WhatsApp floating button (mobile only) */
+  .whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:9999;
+    background:#25D366;
+    color:#FFFFFF;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 20px;
+    border-radius:50px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:14px;
+    box-shadow:0 4px 16px rgba(0,0,0,0.4);
+  }
+  .whatsapp-float svg{ width:20px; height:20px; flex-shrink:0; }
+  @media (min-width:768px){
+    .whatsapp-float{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-logo">
+    <img src="logo.png" alt="Arno Hoberg">
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="display hero-headline">Chega de depender<br>de sorte para<br>gerar lead.</h1>
+          <p class="hero-sub">Consiga mais oportunidades de negócio em menos tempo!</p>
+          <a href="https://wa.me/5548988387867?text=Ol%C3%A1%20Arno%2C%20vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20a%20implementa%C3%A7%C3%A3o." target="_blank" class="btn">Quero esse resultado &rarr; Falar no WhatsApp</a>
+          <p class="fine-print">Análise gratuita da sua conta &middot; Sem compromisso</p>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="foto1.jpg" alt="Arno Hoberg, especialista em tráfego pago para corretores">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="section section-alt border-top-orange reveal" id="resultados">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="display stat-number">+100</div>
+        <div class="stat-label">leads/mês para corretores</div>
+      </div>
+      <div>
+        <div class="display stat-number">R$ 611</div>
+        <div class="stat-label">de anúncio &middot; 116 conversas no Whats</div>
+      </div>
+      <div>
+        <div class="display stat-number">30 dias</div>
+        <div class="stat-label">de acompanhamento ao seu lado</div>
+      </div>
+    </div>
+    <div class="prints-grid">
+      <div class="print-card">
+        <img src="print1.jpg" alt="Print do Gerenciador de Anúncios mostrando 116 conversas por R$ 611">
+        <p class="print-caption">116 conversas &middot; R$ 611 &middot; Junho 2026 &middot; Print real, sem edição</p>
+      </div>
+      <div class="print-card">
+        <img src="print2.jpg" alt="Print comparando maio e junho: 81 e 116 conversas geradas">
+        <p class="print-caption">Maio: 81 conversas &middot; Junho: 116 &middot; Mesmo corretor &middot; Custo caindo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="section reveal" id="problema">
+  <div class="container">
+    <div class="problem-text">
+      <h2 class="display problem-headline">Seu lead está indo pro concorrente.</h2>
+      <p class="problem-body">Portal divide seu lead com 10 corretores.
+Indicação depende de mês bom.
+Plantão? O cliente é da construtora, não seu.
+
+Anúncio próprio no Meta Ads é o único canal onde o lead chega direto no seu WhatsApp e continua sendo seu depois do lançamento, do mês ruim, da entressafra.</p>
+      <p class="problem-highlight">O problema não é o mercado. É a estrutura do seu anúncio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section section-alt border-top-orange reveal" id="processo">
+  <div class="container">
+    <h2 class="display" style="font-size:clamp(32px,5vw,48px); margin-bottom:56px;">Como funciona</h2>
+    <div class="steps">
+      <div class="step">
+        <h3 class="step-title">Roteiro e vídeo</h3>
+        <p class="step-body">Criamos juntos o roteiro de 3 vídeos focados no seu cliente, não no público geral. Eu escrevo, você grava. Edição profissional inclusa.</p>
+      </div>
+      <div class="step">
+        <h3 class="step-title">Configuração</h3>
+        <p class="step-body">Sessão ao vivo via Meet. Abrimos seu Gerenciador de Anúncios juntos. Você vê cada clique, cada real, cada decisão. Nada acontece sem você saber.</p>
+      </div>
+      <div class="step">
+        <h3 class="step-title">Campanha no ar</h3>
+        <p class="step-body">Pixel instalado corretamente, público configurado, anúncios no ar. Estrutura para gerar conversa no seu WhatsApp, não lead genérico, não formulário frio.</p>
+      </div>
+      <div class="step">
+        <h3 class="step-title">30 dias ao seu lado</h3>
+        <p class="step-body">Duas reuniões semanais via Meet para analisar as métricas juntos. CPL caindo. Criativos girando. Você aprendendo a ler sua própria campanha.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="section reveal" id="bonus">
+  <div class="container">
+    <div class="bonus-card">
+      <div class="bonus-tag">Bônus incluso</div>
+      <h2 class="display bonus-title">Análise de atendimento inicial</h2>
+      <p class="bonus-body">Lead de tráfego pago não é lead de indicação.
+Ele não te conhece, não confia ainda e testa se você vai desaparecer em 24 horas.
+
+Como parte da implementação, analiso seu atendimento inicial e te mostro o que ajustar na primeira resposta para dobrar sua taxa de conversão de conversa em visita.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTIMENTO -->
+<section class="section section-alt border-top-orange reveal" id="investimento">
+  <div class="container investment">
+    <div class="price-old">R$ 1.890,00</div>
+    <div class="display price-new">R$ 1.490,00</div>
+    <p class="price-condition">Condição de lançamento &middot; 5 vagas por mês</p>
+    <ul class="investment-list">
+      <li>Roteiro estratégico de 3 vídeos</li>
+      <li>Edição profissional dos 3 vídeos</li>
+      <li>Configuração técnica (pixel + campanha) ao vivo no seu Gerenciador</li>
+      <li>30 dias de acompanhamento &middot; 2 reuniões semanais</li>
+      <li>Bônus: análise do atendimento inicial</li>
+      <li>Verba de anúncios: direto na plataforma, sem intermediário</li>
+    </ul>
+    <p class="investment-note">Campanhas adicionais: + R$ 250,00 por campanha simultânea</p>
+    <a href="https://wa.me/5548988387867?text=Ol%C3%A1%20Arno%2C%20vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20a%20implementa%C3%A7%C3%A3o." target="_blank" class="btn">Quero começar &rarr; Falar no WhatsApp</a>
+  </div>
+</section>
+
+<!-- QUEM SOU EU -->
+<section class="section reveal" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="foto2.jpg" alt="Arno Hoberg em produção de conteúdo" class="photo-desktop">
+          <img src="foto3.jpg" alt="Arno Hoberg atendendo como corretor" class="photo-mobile">
+        </div>
+      </div>
+      <div class="about-text">
+        <h2 class="display about-name">Arno Hoberg</h2>
+        <p class="about-role">Especialista em tráfego pago para corretores e imobiliárias.</p>
+        <div class="about-body">
+          <p>Não sou agência. Não pego sua conta e some. Subo a campanha junto com você, no seu Gerenciador, para você ver cada real investido.</p>
+          <p style="color:var(--text); font-weight:600; margin-bottom:12px;">Meu trabalho:</p>
+        </div>
+        <ul class="about-list">
+          <li>Tráfego inteligente: estrutura e gestão no Meta Ads</li>
+          <li>Autoridade digital: roteiros e edição para sua marca pessoal</li>
+          <li>Consultoria comercial: análise do atendimento inicial</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section final-cta reveal" id="contato">
+  <div class="container">
+    <h2 class="display final-headline">Seu próximo cliente<br>já está no Meta Ads.</h2>
+    <p class="final-sub">Enquanto você lê isso, ele está vendo o anúncio de outro corretor.</p>
+    <a href="https://wa.me/5548988387867?text=Ol%C3%A1%20Arno%2C%20vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20a%20implementa%C3%A7%C3%A3o." target="_blank" class="btn">Falar com Arno agora</a>
+    <p class="fine-print">Call de 20 min &middot; Sem custo &middot; Sem compromisso</p>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer class="border-top-orange">
+  <div class="container footer-inner">
+    <img src="logo.png" alt="Arno Hoberg">
+    <p class="footer-copy">&copy; 2026 Arno Hoberg &middot; Especialista em tráfego imobiliário</p>
+  </div>
+</footer>
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5548988387867?text=Ol%C3%A1%20Arno%2C%20vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20a%20implementa%C3%A7%C3%A3o." target="_blank" class="whatsapp-float">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38a9.96 9.96 0 0 0 4.79 1.22h.01c5.52 0 10-4.48 10-10s-4.48-10-10.01-10zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.18 8.18 0 0 1-1.25-4.35c0-4.52 3.68-8.2 8.21-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.2-8.19 8.2zm4.49-6.15c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.63.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.24-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14 0-.31-.02-.47-.02s-.43.06-.66.31c-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.66-1.17.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/>
+  </svg>
+  Falar agora
+</a>
+
+<script>
+  (function(){
+    var revealEls = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){
+      revealEls.forEach(function(el){ el.classList.add('visible'); });
+      return;
+    }
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function(el){ observer.observe(el); });
+  })();
+</script>
+</body>
+</html>
