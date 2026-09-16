@@ -1,7 +1,36 @@
 <!DOCTYPE html>
+<!--
+  VARIAÇÕES DE TÍTULO DO HERO PARA TESTE A/B (não removidas do arquivo, só de uso)
+  Cada uma ataca o mesmo problema ("anúncio que não fecha") por um ângulo diferente.
+
+  Variação A (a que está publicada abaixo, ângulo "resultado final"):
+  "Anúncio que traz quem fecha procedimento, não quem só pergunta o preço."
+
+  Variação B (ângulo "diagnóstico antes de anunciar"):
+  "Antes de subir um anúncio, eu descubro por que os últimos não fecharam."
+
+  Variação C (ângulo "público certo"):
+  "Pare de pagar por curioso. Comece a pagar por quem decide fazer o procedimento."
+
+  Variação D (ângulo "estrutura completa, não só mídia"):
+  "Roteiro, edição, criativo e campanha. Você só precisa aparecer no vídeo."
+-->
 <html lang="pt-BR">
 <head>
-  <!-- Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tráfego pago para clínicas de estética | Arno Hoberg</title>
+<meta name="description" content="Gestão de Meta Ads para clínicas de harmonização facial e dermatologia estética. Roteiro, edição, criativo e campanha — do zero ao lead no WhatsApp.">
+<meta property="og:title" content="Tráfego pago para clínicas de estética | Arno Hoberg">
+<meta property="og:description" content="Gestão de Meta Ads para clínicas de harmonização facial e dermatologia estética. Roteiro, edição, criativo e campanha — do zero ao lead no WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/hero.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,689 +40,932 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1903540610882588');
+fbq('init', 'SEU_PIXEL_ID'); /* troque pelo ID do pixel — use o mesmo valor em CONFIG.pixelId, lá embaixo */
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1903540610882588&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<!--
-  Mova os arquivos para a mesma pasta do index.html e renomeie conforme abaixo:
 
-  logo.png    <- D:\ARNO\LOGO\AH.png
-  foto1.jpg   <- D:\ARNO\FOTOS PESSOAIS\FOTO PERFIL 01.jpg
-  foto2.jpg   <- D:\ARNO\FOTOS PESSOAIS\FOTO HOTMART.jpg
-  foto3.jpg   <- D:\ARNO\FOTOS PESSOAIS\FOTO CORRETOR.jpg
-  print1.jpg  <- D:\ARNO\CRIATIVOS\LP Gestor TP\POST _ PRINT.jpg
-  print2.jpg  <- D:\ARNO\CRIATIVOS\LP Gestor TP\POST _ PRINT_V02.jpg
--->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arno Hoberg | Tráfego Pago para Corretores e Imobiliárias</title>
-<meta name="description" content="Especialista em tráfego pago para corretores de imóveis e imobiliárias. Estrutura de anúncios que gera conversa qualificada no WhatsApp, direto pra você.">
-<meta property="og:title" content="Arno Hoberg | Tráfego Pago para Corretores e Imobiliárias">
-<meta property="og:description" content="Consiga mais oportunidades de negócio em menos tempo!">
-<meta property="og:type" content="website">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600&display=swap');
-
   :root{
-    --bg:#0a0a0a;
-    --bg-alt:#111111;
-    --surface:#161616;
-    --border:#222222;
-    --orange:#E8650A;
-    --orange-hover:#FF7A1A;
-    --text:#FFFFFF;
-    --text-secondary:#A0A0A0;
-    --text-tertiary:#666666;
+    --branco:#FFFFFF;
+    --neutro:#F7F7F7;
+    --tinta:#000000;
+    --corpo:#4A4A4A;
+    --apoio:#8A8A8A;
+    --linha:#E4E4E4;
+    --laranja:#F25C05;
+    --laranja-forte:#C74804;
+    --laranja-lavado:#FFF1E8;
+    --topbar-h:40px;
   }
 
-  *,*::before,*::after{ box-sizing:border-box; }
+  *{ box-sizing:border-box; }
   html{ scroll-behavior:smooth; }
   body{
     margin:0;
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Inter',sans-serif;
+    padding-top:var(--topbar-h);
+    background:var(--branco);
+    color:var(--corpo);
+    font-family:'Instrument Sans', sans-serif;
     font-weight:400;
-    line-height:1.5;
+    font-size:1.0625rem;
+    line-height:1.65;
     -webkit-font-smoothing:antialiased;
   }
-  img{ max-width:100%; height:auto; display:block; }
-  a{ text-decoration:none; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
 
-  .display{
-    font-family:'Barlow Condensed',sans-serif;
-    font-weight:900;
-    text-transform:uppercase;
-    letter-spacing:-0.02em;
-    line-height:0.95;
+  h1,h2,h3{
+    font-family:'Archivo', sans-serif;
+    font-weight:700;
+    color:var(--tinta);
     margin:0;
   }
+  h1{ font-size:clamp(2.2rem, 6vw, 4rem); letter-spacing:-0.02em; line-height:1.08; }
+  h2{ font-size:clamp(1.8rem, 4vw, 2.75rem); letter-spacing:-0.02em; line-height:1.12; }
+  h3{ font-size:1.35rem; font-weight:600; }
 
-  .container{
-    width:100%;
-    max-width:1100px;
-    margin:0 auto;
-    padding:0 20px;
+  p{ margin:0; }
+  .corpo-largo{ max-width:38em; } /* ~68 caracteres de largura confortável */
+
+  .container{ max-width:1140px; margin:0 auto; padding:0 24px; }
+
+  section{ padding:64px 0; }
+  @media (min-width:768px){
+    section{ padding:96px 0; }
+  }
+  .bg-neutro{ background:var(--neutro); }
+
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:2px solid var(--laranja);
+    outline-offset:2px;
   }
 
-  .section{ padding:80px 0; position:relative; }
-  .section-alt{ background:var(--bg-alt); }
-  .border-top-orange{ border-top:1px solid var(--orange); }
-
-  .accent{ color:var(--orange); }
-
-  /* Reveal on scroll */
-  .reveal{ opacity:0; transform:translateY(40px); }
-  @media (prefers-reduced-motion: no-preference){
-    .reveal{ transition:opacity .6s ease, transform .6s ease; }
-  }
-  .reveal.visible{ opacity:1; transform:translateY(0); }
-
-  /* Buttons */
+  /* Botões */
   .btn{
     display:inline-block;
-    background:var(--orange);
-    color:#000000;
-    font-family:'Inter',sans-serif;
-    font-weight:700;
-    font-size:16px;
-    text-transform:uppercase;
-    letter-spacing:0.03em;
-    padding:18px 32px;
-    border-radius:2px;
+    background:var(--laranja);
+    color:#FFFFFF;
+    font-family:'Instrument Sans', sans-serif;
+    font-weight:500;
+    font-size:1rem;
+    padding:16px 28px;
+    border-radius:6px;
     border:none;
+    text-decoration:none;
     cursor:pointer;
-    transition:background .2s ease, box-shadow .2s ease;
-    width:100%;
+    transition:background .15s ease;
+  }
+  .btn:hover{ background:var(--laranja-forte); }
+  .btn-grande{ font-size:1.0625rem; padding:18px 36px; }
+  .btn-pequeno{ font-size:0.9375rem; padding:11px 20px; }
+
+  /* Barra de topo */
+  .topbar{
+    position:fixed; top:0; left:0; right:0;
+    height:var(--topbar-h);
+    background:var(--tinta);
+    color:#FFFFFF;
+    display:flex; align-items:center; justify-content:center;
+    font-size:0.85rem;
     text-align:center;
+    z-index:1000;
+    padding:0 12px;
   }
-  .btn:hover{
-    background:var(--orange-hover);
-    box-shadow:0 0 20px rgba(232,101,10,0.3);
-  }
-  @media (min-width:768px){
-    .btn{ width:auto; }
+  .topbar .full{ display:inline; }
+  .topbar .curta{ display:none; }
+  @media (max-width:480px){
+    .topbar .full{ display:none; }
+    .topbar .curta{ display:inline; }
   }
 
-  .fine-print{
-    color:var(--text-tertiary);
-    font-size:13px;
-    margin-top:14px;
+  /* Cabeçalho */
+  header{
+    padding:20px 0;
+    border-bottom:1px solid var(--linha);
   }
+  header .container{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  .logo-img{ height:36px; width:auto; }
+  .marca{ display:flex; align-items:center; gap:12px; }
+  .marca-texto{
+    font-family:'Archivo', sans-serif;
+    font-weight:600;
+    font-size:1rem;
+    color:var(--tinta);
+    white-space:nowrap;
+  }
+  .marca-cargo{ font-weight:400; color:var(--corpo); }
+  @media (max-width:600px){
+    .marca-cargo{ display:none; }
+  }
+
+  /* Fallback visual para imagens ausentes */
+  .foto-caixa{
+    position:relative;
+    background:var(--neutro);
+    border:1px solid var(--linha);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  .foto-caixa.proporcao-4-5{ aspect-ratio:4/5; }
+  .foto-caixa img{ width:100%; height:100%; object-fit:cover; border-radius:6px; }
+  .foto-caixa img.ausente{ display:none; }
+  .foto-caixa::after{
+    content:'Foto pendente';
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--apoio); font-size:0.85rem;
+  }
+  /* o aviso só aparece se a imagem realmente falhar ao carregar (recebe a classe .ausente) */
+  .foto-caixa:not(:has(img.ausente))::after{ content:none; }
 
   /* Hero */
-  .hero{
-    min-height:100vh;
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    background:var(--bg);
-    overflow:hidden;
-    padding-top:32px;
-    padding-bottom:60px;
+  .hero .container{
+    display:flex; flex-direction:column; gap:40px;
   }
-  .hero::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background-image:radial-gradient(circle, var(--orange) 1px, transparent 1px);
-    background-size:40px 40px;
-    opacity:0.06;
-    pointer-events:none;
+  @media (min-width:900px){
+    .hero .container{ flex-direction:row; align-items:center; gap:56px; }
+    .hero-texto{ flex:0 0 55%; }
+    .hero-foto{ flex:0 0 40%; }
   }
-  .hero-logo{
-    position:relative;
-    z-index:2;
-    padding:0 20px;
-  }
-  .hero-logo img{ max-height:48px; }
-  .hero-body{
-    position:relative;
-    z-index:2;
-    flex:1;
-    display:flex;
-    align-items:center;
-    padding:40px 0;
-  }
-  .hero-grid{
-    display:flex;
-    flex-direction:column;
-    gap:40px;
-    width:100%;
-  }
-  .hero-headline{
-    font-size:clamp(48px, 9vw, 92px);
-  }
+  .hero{ padding-top:56px; padding-bottom:56px; }
+  @media (min-width:768px){ .hero{ padding-top:88px; padding-bottom:88px; } }
+  .hero-foto{ order:2; }
+  .hero-texto{ order:1; }
+  .hero-foto .foto-caixa{ max-width:360px; margin:0 auto; }
+  @media (min-width:900px){ .hero-foto .foto-caixa{ max-width:none; margin:0; } }
+
   .hero-sub{
-    color:rgba(255,255,255,0.8);
-    font-size:18px;
-    font-weight:500;
-    max-width:520px;
-    margin:24px 0 32px;
+    color:var(--corpo);
+    font-size:1.0625rem;
+    margin:20px 0 28px;
+    max-width:38em;
   }
-  .hero-photo{ max-width:420px; margin:0 auto; }
-  @media (min-width:768px){
-    .hero-grid{
-      flex-direction:row;
-      align-items:center;
-      justify-content:space-between;
-    }
-    .hero-text{ flex:1; max-width:600px; }
-    .hero-photo{ flex:1; margin:0; }
+  .hero-nota{
+    font-size:0.9rem;
+    color:var(--apoio);
+    margin-top:12px;
   }
-
-  .photo-frame{
-    position:relative;
-    overflow:hidden;
-    border-radius:4px;
+  .hero-reforco{
+    display:flex; flex-wrap:wrap;
+    gap:10px 24px;
+    margin-top:32px;
   }
-  .photo-frame img{ filter:grayscale(1); width:100%; }
-  .photo-frame::after{
+  .hero-reforco span{
+    display:flex; align-items:center; gap:8px;
+    font-size:0.9375rem; color:var(--corpo);
+  }
+  .hero-reforco span::before{
     content:'';
-    position:absolute;
-    inset:0;
-    background:var(--orange);
-    opacity:0.15;
-    mix-blend-mode:luminosity;
+    width:6px; height:6px;
+    background:var(--laranja);
+    flex-shrink:0;
   }
 
-  /* Stats */
-  .stats-grid{
-    display:grid;
-    grid-template-columns:1fr;
+  /* Dor */
+  .dor .container{ max-width:800px; }
+  .dor h2{ margin-bottom:24px; }
+  .dor p{ font-size:1.0625rem; }
+
+  /* Três motivos */
+  .motivo{
+    padding:32px 0;
+    border-top:1px solid var(--linha);
+  }
+  .motivo:last-of-type{ border-bottom:1px solid var(--linha); }
+  .motivo h3{ margin-bottom:10px; }
+  .motivo p{ max-width:42em; }
+  .destaque-lavado{
+    background:var(--laranja-lavado);
+    padding:24px 28px;
+    border-radius:6px;
+    margin-top:40px;
+    font-family:'Archivo', sans-serif;
+    font-weight:600;
+    color:var(--tinta);
+    font-size:1.1rem;
+  }
+
+  /* Prova */
+  .prova-topo{ max-width:640px; margin-bottom:48px; }
+  .prova-topo h2{ margin-bottom:12px; }
+  .prova-topo p{ color:var(--corpo); }
+
+  .prova-numeros{
+    display:flex; flex-wrap:wrap;
     gap:40px;
-    text-align:center;
+    margin-bottom:56px;
   }
-  @media (min-width:768px){
-    .stats-grid{ grid-template-columns:repeat(3,1fr); }
+  .prova-numero .valor{
+    font-family:'Archivo', sans-serif;
+    font-weight:700;
+    font-size:clamp(2.5rem, 6vw, 3.5rem);
+    color:var(--laranja);
+    line-height:1;
   }
-  .stat-number{
-    font-size:clamp(48px,7vw,72px);
-    color:var(--orange);
-  }
-  .stat-label{
-    color:var(--text-secondary);
-    text-transform:uppercase;
-    font-size:14px;
-    letter-spacing:0.04em;
+  .prova-numero .rotulo{
+    color:var(--tinta);
+    font-size:0.95rem;
     margin-top:8px;
   }
 
-  .prints-grid{
+  .prova-grade{
     display:grid;
     grid-template-columns:1fr;
     gap:24px;
-    margin-top:60px;
   }
   @media (min-width:768px){
-    .prints-grid{ grid-template-columns:1fr 1fr; }
+    .prova-grade{ grid-template-columns:repeat(3, 1fr); }
   }
-  .print-card img{
-    border:1px solid var(--orange);
-    border-radius:4px;
+  @media (max-width:767px){
+    .prova-grade{
+      grid-auto-flow:column;
+      grid-auto-columns:85%;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      padding-bottom:8px;
+      margin:0 -24px;
+      padding-left:24px;
+      padding-right:24px;
+    }
+    .prova-card{ scroll-snap-align:center; }
   }
-  .print-caption{
-    color:var(--text-secondary);
-    font-size:14px;
-    margin-top:12px;
-    text-align:center;
+  .prova-card{
+    background:#FFFFFF;
+    border:1px solid var(--linha);
+    border-radius:6px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.04);
+    padding:10px;
+  }
+  .prova-card button{
+    display:block; width:100%; padding:0; border:none; background:none; cursor:zoom-in;
+  }
+  .prova-card img{
+    width:100%; border-radius:4px;
+  }
+  .prova-legenda{
+    color:var(--apoio); font-size:0.9rem;
+    padding:10px 4px 2px;
+  }
+  .prova-arraste{
+    display:none; color:var(--apoio); font-size:0.85rem; margin-bottom:12px;
+  }
+  @media (max-width:767px){ .prova-arraste{ display:block; } }
+  .prova-rodape{
+    color:var(--apoio); font-size:0.85rem;
+    margin-top:32px; max-width:42em;
+  }
+  .prova-reveal{ opacity:0; transform:translateY(24px); }
+  .prova-reveal.visivel{
+    opacity:1; transform:translateY(0);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  @media (prefers-reduced-motion:reduce){
+    .prova-reveal{ opacity:1; transform:none; transition:none; }
   }
 
-  /* Problem section */
-  .problem-text{
-    text-align:center;
-    max-width:600px;
-    margin:0 auto;
+  /* Lightbox */
+  .lightbox{
+    position:fixed; inset:0; background:rgba(0,0,0,0.85);
+    display:none; align-items:center; justify-content:center;
+    padding:24px; z-index:2000;
   }
-  .problem-headline{
-    font-size:clamp(36px,6vw,56px);
-    margin-bottom:24px;
-  }
-  .problem-body{
-    color:rgba(255,255,255,0.8);
-    font-size:17px;
-    white-space:pre-line;
-  }
-  .problem-highlight{
-    color:var(--orange);
-    font-weight:700;
-    margin-top:28px;
-    font-size:18px;
+  .lightbox.aberto{ display:flex; }
+  .lightbox img{ max-width:100%; max-height:90vh; border-radius:4px; }
+  .lightbox-fechar{
+    position:absolute; top:20px; right:20px;
+    background:none; border:none; color:#FFFFFF;
+    font-size:1.8rem; line-height:1; cursor:pointer;
+    padding:8px;
   }
 
-  /* Process / steps */
-  .steps{
-    position:relative;
-    padding-left:28px;
-    border-left:1px solid var(--orange);
-    display:flex;
-    flex-direction:column;
-    gap:48px;
+  /* O que você recebe */
+  .recebe-grade{
+    display:grid; grid-template-columns:1fr; gap:36px;
+    margin-top:40px;
   }
-  .step{ position:relative; }
-  .step::before{
+  @media (min-width:768px){
+    .recebe-grade{ grid-template-columns:1fr 1fr; gap:40px 48px; }
+  }
+  .recebe-item::before{
     content:'';
-    position:absolute;
-    left:-33px;
-    top:4px;
-    width:9px;
-    height:9px;
-    border-radius:50%;
-    background:var(--orange);
-    box-shadow:0 0 10px rgba(232,101,10,0.6);
+    display:block;
+    width:24px; height:2px;
+    background:var(--laranja);
+    margin-bottom:14px;
   }
-  .step-title{
-    font-family:'Barlow Condensed',sans-serif;
-    font-weight:700;
-    text-transform:uppercase;
-    font-size:22px;
-    color:var(--orange);
-    margin:0 0 8px;
-  }
-  .step-body{
-    color:var(--text-secondary);
-    font-size:16px;
-    max-width:600px;
-  }
+  .recebe-item h3{ margin-bottom:8px; }
+  .recebe-item p{ max-width:36em; }
 
-  /* Bonus */
-  .bonus-card{
-    border:1px solid var(--orange);
-    border-radius:4px;
-    padding:40px;
-    box-shadow:0 0 20px rgba(232,101,10,0.15);
-    max-width:700px;
-    margin:0 auto;
+  /* Método */
+  .metodo .container{
+    display:flex; flex-direction:column; gap:40px;
   }
-  .bonus-tag{
-    color:var(--orange);
-    text-transform:uppercase;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:0.08em;
+  @media (min-width:900px){
+    .metodo .container{ flex-direction:row; gap:56px; align-items:stretch; }
+    .metodo-foto{ flex:0 0 40%; }
+    .metodo-texto{ flex:0 0 55%; }
   }
-  .bonus-title{
-    font-size:clamp(28px,4vw,36px);
-    margin:12px 0 20px;
+  .metodo-foto .foto-caixa{ max-width:360px; }
+  .metodo-foto img{ object-position:center top; }
+  @media (min-width:900px){
+    .metodo-foto .foto-caixa{ max-width:none; height:100%; aspect-ratio:auto; }
   }
-  .bonus-body{
-    color:var(--text-secondary);
-    font-size:16px;
-    white-space:pre-line;
+  .metodo-topo p{ color:var(--corpo); margin:12px 0 36px; }
+  .etapa{ display:flex; gap:20px; margin-bottom:32px; }
+  .etapa:last-child{ margin-bottom:0; }
+  .etapa .numero{
+    font-family:'Archivo', sans-serif; font-weight:700;
+    color:var(--laranja); font-size:1.5rem;
+    flex-shrink:0; width:2ch;
   }
+  .etapa h3{ margin-bottom:6px; }
+  .etapa p{ max-width:36em; }
 
-  /* Investment */
-  .investment{ text-align:center; }
-  .price-old{
-    color:var(--text-tertiary);
-    text-decoration:line-through;
-    font-size:20px;
+  /* Comparativo */
+  .comparativo table{
+    width:100%; border-collapse:collapse; margin-top:32px;
   }
-  .price-new{
-    font-size:clamp(48px,8vw,72px);
-    color:var(--orange);
-    margin:8px 0;
+  .comparativo th{
+    text-align:left; font-family:'Archivo', sans-serif; font-weight:600;
+    font-size:0.95rem; color:var(--tinta);
+    padding:12px 16px;
+    border-bottom:1px solid var(--linha);
   }
-  .price-condition{
-    color:var(--text-secondary);
-    font-size:15px;
-    margin-bottom:40px;
+  .comparativo td{
+    padding:16px;
+    border-bottom:1px solid var(--linha);
+    font-size:0.98rem;
+    vertical-align:top;
   }
-  .investment-list{
-    list-style:none;
-    padding:0;
-    margin:0 auto 40px;
-    max-width:520px;
-    text-align:left;
+  .comparativo td:first-child, .comparativo th:first-child{
+    color:var(--apoio);
   }
-  .investment-list li{
-    color:var(--text);
-    font-size:16px;
-    padding:10px 0;
-    border-bottom:1px solid var(--border);
+  .comparativo td:last-child{
+    border-left:3px solid var(--laranja);
   }
-  .investment-list li::before{
-    content:'— ';
-    color:var(--orange);
-    font-weight:700;
-  }
-  .investment-note{
-    color:var(--text-tertiary);
-    font-size:13px;
-    margin-bottom:32px;
-  }
+  .comparativo{ overflow-x:auto; }
 
-  /* About */
-  .about-grid{
-    display:flex;
-    flex-direction:column;
-    gap:40px;
-    align-items:center;
+  /* CTA intermediário */
+  .cta-meio{ background:var(--laranja-lavado); text-align:center; }
+  .cta-meio .container{ max-width:640px; }
+  .cta-meio p{ color:var(--corpo); margin:16px 0 28px; }
+
+  /* Para quem é */
+  .qualifica-grade{
+    display:grid; grid-template-columns:1fr; gap:40px;
+    margin-top:32px;
   }
   @media (min-width:768px){
-    .about-grid{ flex-direction:row; align-items:flex-start; }
-    .about-photo{ flex:1; }
-    .about-text{ flex:1.2; }
+    .qualifica-grade{ grid-template-columns:1fr 1fr; gap:56px; }
   }
-  .about-photo{ max-width:380px; width:100%; }
-  .photo-desktop{ display:none; }
-  .photo-mobile{ display:block; }
-  @media (min-width:768px){
-    .photo-desktop{ display:block; }
-    .photo-mobile{ display:none; }
+  .qualifica-grade h3{ margin-bottom:16px; }
+  .qualifica-grade ul{ list-style:none; margin:0; padding:0; }
+  .qualifica-grade li{ padding:8px 0; }
+  .qualifica-sim li{ padding-left:18px; position:relative; }
+  .qualifica-sim li::before{
+    content:''; position:absolute; left:0; top:16px;
+    width:6px; height:6px; background:var(--laranja);
   }
-  .about-name{
-    font-size:clamp(32px,5vw,44px);
-    margin-bottom:4px;
-  }
-  .about-role{
-    color:var(--text-secondary);
-    font-size:16px;
-    margin-bottom:20px;
-  }
-  .about-body p{
-    color:rgba(255,255,255,0.8);
-    font-size:16px;
-    margin:0 0 20px;
-  }
-  .about-list{
-    list-style:none;
-    padding:0;
-    margin:0;
-  }
-  .about-list li{
-    color:var(--text-secondary);
-    font-size:16px;
-    padding:8px 0;
-  }
-  .about-list li::before{
-    content:'— ';
-    color:var(--orange);
-    font-weight:700;
+  .qualifica-nao{ color:var(--apoio); }
+  .qualifica-nao li{ padding-left:18px; position:relative; }
+  .qualifica-nao li::before{
+    content:'—'; position:absolute; left:0;
   }
 
-  /* Final CTA */
-  .final-cta{
-    text-align:center;
-    position:relative;
-    overflow:hidden;
+  /* Quem está por trás */
+  .sobre .container{
+    display:flex; flex-direction:column-reverse; gap:40px;
   }
-  .final-cta::before{
+  @media (min-width:900px){
+    .sobre .container{ flex-direction:row; gap:56px; align-items:flex-start; }
+    .sobre-texto{ flex:0 0 55%; }
+    .sobre-foto{ flex:0 0 40%; }
+  }
+  .sobre-foto .foto-caixa{ max-width:360px; }
+  @media (min-width:900px){ .sobre-foto .foto-caixa{ max-width:none; } }
+  .sobre-texto h2{ margin-bottom:20px; }
+  .sobre-texto p{ margin-bottom:24px; max-width:42em; }
+  .assinatura-nome{ font-family:'Archivo', sans-serif; font-weight:700; color:var(--tinta); }
+  .assinatura-cargo{ color:var(--apoio); font-size:0.9rem; margin-top:2px; }
+
+  /* FAQ */
+  .faq details{
+    border-bottom:1px solid var(--linha);
+    padding:22px 0;
+  }
+  .faq details:first-of-type{ border-top:1px solid var(--linha); }
+  .faq summary{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    cursor:pointer;
+    font-family:'Archivo', sans-serif; font-weight:600;
+    color:var(--tinta); font-size:1.05rem;
+    list-style:none;
+  }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::after{
     content:'';
-    position:absolute;
-    top:50%; left:50%;
-    width:800px; height:800px;
-    transform:translate(-50%,-50%);
-    background:radial-gradient(circle, rgba(232,101,10,0.18) 0%, transparent 70%);
-    pointer-events:none;
+    flex-shrink:0;
+    width:10px; height:10px;
+    border-right:2px solid var(--laranja);
+    border-bottom:2px solid var(--laranja);
+    transform:rotate(45deg);
+    transition:transform .2s ease;
   }
-  .final-headline{
-    font-size:clamp(40px,7vw,72px);
-    position:relative;
-    z-index:1;
-  }
-  .final-sub{
-    color:var(--text-secondary);
-    font-size:17px;
-    max-width:500px;
-    margin:20px auto 36px;
-    position:relative;
-    z-index:1;
-  }
-  .final-cta .btn{ position:relative; z-index:1; font-size:18px; padding:22px 44px; }
+  .faq details[open] summary::after{ transform:rotate(225deg); }
+  .faq .resposta{ margin-top:16px; max-width:44em; color:var(--corpo); }
 
-  /* Footer */
+  /* CTA final */
+  .cta-final{
+    background:var(--tinta); color:#FFFFFF; text-align:center;
+  }
+  .cta-final .container{ max-width:640px; }
+  .cta-final h2{ color:#FFFFFF; }
+  .cta-final p{ color:rgba(255,255,255,0.75); margin:20px 0 32px; }
+  .cta-final .hero-nota{ color:rgba(255,255,255,0.55); margin-top:20px; }
+
+  /* Rodapé */
   footer{
-    background:var(--bg);
+    border-top:1px solid var(--linha);
     padding:32px 0;
   }
-  .footer-inner{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-    align-items:center;
-    text-align:center;
+  footer .container{
+    display:flex; flex-direction:column; gap:12px; align-items:flex-start;
   }
-  .footer-inner img{ max-height:28px; }
-  .footer-copy{
-    color:var(--text-tertiary);
-    font-size:13px;
+  @media (min-width:600px){
+    footer .container{ flex-direction:row; align-items:center; justify-content:space-between; }
   }
-  @media (min-width:768px){
-    .footer-inner{
-      flex-direction:row;
-      justify-content:space-between;
-      text-align:left;
-    }
-  }
+  footer img{ height:24px; }
+  footer .copy{ color:var(--apoio); font-size:0.85rem; }
 
-  /* WhatsApp floating button (mobile only) */
-  .whatsapp-float{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    z-index:9999;
-    background:#25D366;
-    color:#FFFFFF;
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding:12px 20px;
-    border-radius:50px;
-    font-family:'Inter',sans-serif;
-    font-weight:600;
-    font-size:14px;
-    box-shadow:0 4px 16px rgba(0,0,0,0.4);
+  /* Botão flutuante do WhatsApp */
+  .whats-flutuante{
+    position:fixed; right:20px; bottom:20px;
+    width:56px; height:56px;
+    background:var(--laranja);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 4px 14px rgba(0,0,0,0.2);
+    text-decoration:none;
+    opacity:0; visibility:hidden; transform:translateY(12px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s;
+    z-index:900;
   }
-  .whatsapp-float svg{ width:20px; height:20px; flex-shrink:0; }
-  @media (min-width:768px){
-    .whatsapp-float{ display:none; }
+  .whats-flutuante.visivel{
+    opacity:1; visibility:visible; transform:translateY(0);
   }
+  .whats-flutuante svg{ width:28px; height:28px; }
 </style>
 </head>
 <body>
 
-<!-- HERO -->
+<div class="topbar">
+  <span class="full">Trabalho com no máximo <span data-vagas-totais></span> clínicas por mês. Restam <span data-vagas-restantes></span> vagas para <span data-mes></span>.</span>
+  <span class="curta">Restam <span data-vagas-restantes></span> vagas em <span data-mes></span></span>
+</div>
+
+<header>
+  <div class="container">
+    <div class="marca">
+      <img src="img/logo.png" alt="Arno Hoberg" class="logo-img" width="36" height="36" loading="eager"
+        onerror="this.style.display='none'">
+      <span class="marca-texto">Arno Hoberg <span class="marca-cargo">• Gestor de Tráfego Pago</span></span>
+    </div>
+    <a href="#" class="btn btn-pequeno" data-whats="header">Falar no WhatsApp</a>
+  </div>
+</header>
+
+<!-- 3. HERO -->
 <section class="hero">
-  <div class="hero-logo">
-    <img src="logo.png" alt="Arno Hoberg">
+  <div class="container">
+    <div class="hero-texto">
+      <h1>Anúncio que traz quem fecha procedimento, não quem só pergunta o preço.</h1>
+      <p class="hero-sub">Gestão de tráfego no Meta Ads para clínicas de harmonização facial e dermatologia estética. Eu escrevo o roteiro, você grava no celular, eu edito, monto o criativo e cuido da campanha inteira.</p>
+      <a href="#" class="btn btn-grande" data-whats="hero">Quero falar sobre a minha clínica</a>
+      <p class="hero-nota">Conversa direta comigo no WhatsApp. Sem robô, sem equipe de vendas.</p>
+      <div class="hero-reforco">
+        <span>Roteiro pronto</span>
+        <span>Edição profissional</span>
+        <span>Campanha gerenciada</span>
+      </div>
+    </div>
+    <div class="hero-foto">
+      <div class="foto-caixa proporcao-4-5">
+        <img src="img/hero.jpg" alt="Retrato do especialista em tráfego pago para clínicas de estética" width="480" height="600" loading="eager"
+          onerror="this.classList.add('ausente')">
+      </div>
+    </div>
   </div>
-  <div class="hero-body">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <h1 class="display hero-headline">Chega de depender<br>de sorte para<br>gerar lead.</h1>
-          <p class="hero-sub">Consiga mais oportunidades de negócio em menos tempo!</p>
-          <a href="https://wa.me/5548988387867?text=Ol%C3%A1%20Arno%2C%20vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20a%20implementa%C3%A7%C3%A3o." target="_blank" onclick="fbq('track', 'Lead');" class="btn">Quero esse resultado &rarr; Falar no WhatsApp</a>
-          <p class="fine-print">Análise gratuita da sua conta &middot; Sem compromisso</p>
-        </div>
-        <div class="hero-photo">
-          <div class="photo-frame">
-            <img src="foto1.jpg" alt="Arno Hoberg, especialista em tráfego pago para corretores">
+</section>
+
+<!-- 4. IDENTIFICAÇÃO COM A DOR -->
+<section class="dor bg-neutro">
+  <div class="container">
+    <h2>Você já anunciou antes. Entrou gente. Quase ninguém fechou.</h2>
+    <p style="margin-top:24px;">É o relato que eu mais escuto. A clínica investe, o WhatsApp até enche, mas são pessoas perguntando preço e sumindo. Aí vem a conclusão errada: "anúncio não funciona para o meu tipo de procedimento". Funciona. O que quase nunca funciona é o que estava sendo anunciado, e o que acontecia depois que o lead chegava.</p>
+  </div>
+</section>
+
+<!-- 5. OS TRÊS MOTIVOS REAIS -->
+<section class="motivos">
+  <div class="container">
+    <div class="motivo">
+      <h3>O criativo era igual ao de todo mundo.</h3>
+      <p>Foto de banco de imagens, "agende sua avaliação", mesma oferta da clínica da esquina. Quem vê isso não sente diferença nenhuma entre você e os outros seis anúncios que apareceram no mesmo feed.</p>
+    </div>
+    <div class="motivo">
+      <h3>O anúncio chamava qualquer pessoa.</h3>
+      <p>Quando a peça fala de preço baixo e promoção, quem responde é quem procura preço baixo. O público que investe em harmonização não decide por desconto, decide por confiança em quem vai aplicar.</p>
+    </div>
+    <div class="motivo">
+      <h3>O lead chegava e esfriava no atendimento.</h3>
+      <p>Resposta em duas horas, mensagem só com tabela de valores, nenhuma condução até o agendamento. O tráfego trouxe a pessoa até a porta e ela foi embora na recepção.</p>
+    </div>
+    <div class="destaque-lavado">
+      Nenhum desses três problemas se resolve aumentando o orçamento.
+    </div>
+  </div>
+</section>
+
+<!-- 6. PROVA -->
+<section class="prova bg-neutro prova-reveal" id="prova">
+  <div class="container">
+    <div class="prova-topo">
+      <h2>Números direto do gerenciador de anúncios.</h2>
+      <p>Prints reais das campanhas que eu gerencio. Sem edição, sem recorte conveniente.</p>
+    </div>
+
+    <div class="prova-numeros">
+      <div class="prova-numero">
+        <div class="valor">+2000</div>
+        <div class="rotulo">Leads gerados em 2026</div>
+      </div>
+      <div class="prova-numero">
+        <div class="valor">R$600</div>
+        <div class="rotulo">investimento minimo por mês</div>
+      </div>
+      <div class="prova-numero">
+        <div class="valor">R$ 11,46</div>
+        <div class="rotulo">custo médio por contato</div>
+      </div>
+    </div>
+    <!-- [SUBSTITUIR PELOS NÚMEROS QUE VOCÊ QUER DESTACAR — confira no gerenciador antes de publicar] -->
+
+    <p class="prova-arraste">Arraste para o lado para ver os outros prints.</p>
+
+    <div class="prova-grade">
+      <div class="prova-card">
+        <button type="button" data-lightbox="img/prova-01.jpg">
+          <div class="foto-caixa" style="aspect-ratio:4/5;">
+            <img src="img/prova-01.jpg" alt="Print do gerenciador de anúncios com dados de campanha" loading="lazy"
+              onerror="this.classList.add('ausente')">
           </div>
+        </button>
+        <p class="prova-legenda">Painel de campanha — visão geral dos resultados no período.</p>
+      </div>
+      <div class="prova-card">
+        <button type="button" data-lightbox="img/prova-02.jpg">
+          <div class="foto-caixa" style="aspect-ratio:4/5;">
+            <img src="img/prova-02.jpg" alt="Print do gerenciador de anúncios mostrando 76 conversas iniciadas com R$ 871 investidos" loading="lazy"
+              onerror="this.classList.add('ausente')">
+          </div>
+        </button>
+        <p class="prova-legenda">76 conversas iniciadas com R$611 investidos.</p>
+      </div>
+      <div class="prova-card">
+        <button type="button" data-lightbox="img/prova-03.jpg">
+          <div class="foto-caixa" style="aspect-ratio:4/5;">
+            <img src="img/prova-03.jpg" alt="Print do gerenciador de anúncios com dados de campanha" loading="lazy"
+              onerror="this.classList.add('ausente')">
+          </div>
+        </button>
+        <p class="prova-legenda">Painel de campanha — desempenho por conjunto de anúncios.</p>
+      </div>
+    </div>
+
+    <p class="prova-rodape">Resultado varia conforme cidade, ticket, estrutura de atendimento e orçamento. Nenhum número aqui é promessa de repetição.</p>
+  </div>
+</section>
+
+<!-- 7. O QUE VOCÊ RECEBE -->
+<section class="recebe">
+  <div class="container">
+    <h2>O que está incluso no pacote.</h2>
+    <div class="recebe-grade">
+      <div class="recebe-item">
+        <h3>Roteiro de vídeo escrito para você</h3>
+        <p>Eu mando o texto pronto, falando do seu procedimento, com o que dizer e em que ordem. Você grava no celular, sem equipe e sem estúdio.</p>
+      </div>
+      <div class="recebe-item">
+        <h3>Edição profissional dos vídeos</h3>
+        <p>Você me manda o bruto, eu devolvo editado, com corte, legenda e ritmo feitos para segurar atenção no feed.</p>
+      </div>
+      <div class="recebe-item">
+        <h3>Criativos estáticos</h3>
+        <p>Peças de imagem desenhadas para o seu procedimento e para o seu público, não é anúncio genérico.</p>
+      </div>
+      <div class="recebe-item">
+        <h3>Campanha montada e gerenciada</h3>
+        <p>Estrutura, públicos, orçamento e subida das campanhas no Meta Ads. Você não precisa entender de gerenciador.</p>
+      </div>
+      <div class="recebe-item">
+        <h3>Ajuste contínuo</h3>
+        <p>Acompanhamento dos resultados e ajustes necessários, relatórios semanais e mensais direto no seu whats.</p>
+      </div>
+      <div class="recebe-item">
+        <h3>Apoio no atendimento aos leads</h3>
+        <p>Eu não atendo por você, mas analiso onde o lead está esfriando e te dou o caminho para corrigir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. O MÉTODO -->
+<section class="metodo bg-neutro">
+  <div class="container">
+    <div class="metodo-foto">
+      <div class="foto-caixa proporcao-4-5">
+        <img src="img/meio.jpg" alt="Especialista em tráfego pago analisando uma campanha" width="480" height="600" loading="lazy"
+          onerror="this.classList.add('ausente')">
+      </div>
+    </div>
+    <div class="metodo-texto">
+      <div class="metodo-topo">
+        <h2>Método Agenda Cheia</h2>
+        <p>Quatro etapas. Nenhuma delas começa gastando dinheiro em anúncio.</p>
+      </div>
+      <div class="etapa">
+        <div class="numero">01</div>
+        <div>
+          <h3>Diagnóstico</h3>
+          <p>Reunião online para entender procedimento carro-chefe, ticket, região, capacidade de agenda e como o atendimento funciona hoje. É daqui que sai o plano e o investimento recomendado.</p>
+        </div>
+      </div>
+      <div class="etapa">
+        <div class="numero">02</div>
+        <div>
+          <h3>Roteiro e criativo</h3>
+          <p>Escrevo os roteiros, você grava, eu edito e monto as peças estáticas. Tudo construído em cima do que foi levantado no diagnóstico.</p>
+        </div>
+      </div>
+      <div class="etapa">
+        <div class="numero">03</div>
+        <div>
+          <h3>Campanha no ar</h3>
+          <p>Subo a estrutura no Meta Ads com o objetivo certo para o seu caso e acompanho os primeiros dias de perto.</p>
+        </div>
+      </div>
+      <div class="etapa">
+        <div class="numero">04</div>
+        <div>
+          <h3>Ajuste semanal</h3>
+          <p>Leio os dados, corto o que não performa, reforço o que funciona e aponto os gargalos no seu atendimento.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROVA SOCIAL -->
-<section class="section section-alt border-top-orange reveal" id="resultados">
+<!-- 9. COMPARATIVO -->
+<section class="comparativo">
   <div class="container">
-    <div class="stats-grid">
+    <h2>Agência comum x como eu trabalho.</h2>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr><th>Agência comum</th><th>Como eu trabalho</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Aplica o mesmo modelo de campanha em todo cliente</td><td>Estudo a sua clínica antes de escrever qualquer coisa</td></tr>
+          <tr><td>Pede que você mande "algum vídeo"</td><td>Mando o roteiro pronto e edito o material</td></tr>
+          <tr><td>Entrega relatório no fim do mês</td><td>Ajusto durante o mês, quando ainda dá pra mudar o resultado</td></tr>
+          <tr><td>Você fala com o atendimento, nunca com quem opera</td><td>Você fala comigo, sempre</td></tr>
+          <tr><td>Entrega o lead e considera o trabalho feito</td><td>Aponto onde o lead está esfriando no seu atendimento</td></tr>
+          <tr><td>Carteira com dezenas de contas</td><td>No máximo <span data-vagas-totais></span> clínicas por mês</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CTA INTERMEDIÁRIO -->
+<section class="cta-meio">
+  <div class="container">
+    <h2>Já deu pra ver como funciona. Vamos falar sobre a sua clínica?</h2>
+    <p>Sem compromisso! Uma conversa de até 20 minutos para entender se faz sentido para você antes de qualquer coisa.</p>
+    <a href="#" class="btn btn-grande" data-whats="cta_meio">Quero falar sobre a minha clínica</a>
+  </div>
+</section>
+
+<!-- 10. PARA QUEM É E PARA QUEM NÃO É -->
+<section class="qualifica bg-neutro">
+  <div class="container">
+    <h2>Para quem é, e para quem não é.</h2>
+    <div class="qualifica-grade">
       <div>
-        <div class="display stat-number">+100</div>
-        <div class="stat-label">leads/mês para corretores</div>
+        <h3>Faz sentido se:</h3>
+        <ul class="qualifica-sim">
+          <li>Sua clínica já atende e você quer aumentar o volume de agendamentos</li>
+          <li>Você trabalha com harmonização facial, botox, peeling, bioestimulador ou procedimentos de ticket médio a alto</li>
+          <li>Você consegue gravar vídeos no celular seguindo um roteiro</li>
+          <li>Você tem alguém respondendo o WhatsApp em horário comercial</li>
+          <li>Você tem verba mensal para o serviço e para o investimento em anúncio, separadamente</li>
+        </ul>
       </div>
       <div>
-        <div class="display stat-number">R$ 611</div>
-        <div class="stat-label">de anúncio &middot; 116 conversas no Whats</div>
-      </div>
-      <div>
-        <div class="display stat-number">30 dias</div>
-        <div class="stat-label">de acompanhamento ao seu lado</div>
-      </div>
-    </div>
-    <div class="prints-grid">
-      <div class="print-card">
-        <img src="print1.jpg" alt="Print do Gerenciador de Anúncios mostrando 116 conversas por R$ 611">
-        <p class="print-caption">116 conversas &middot; R$ 611 &middot; Junho 2026 &middot; Print real, sem edição</p>
-      </div>
-      <div class="print-card">
-        <img src="print2.jpg" alt="Print comparando maio e junho: 81 e 116 conversas geradas">
-        <p class="print-caption">Maio: 81 conversas &middot; Junho: 116 &middot; Mesmo corretor &middot; Custo caindo</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROBLEMA -->
-<section class="section reveal" id="problema">
-  <div class="container">
-    <div class="problem-text">
-      <h2 class="display problem-headline">Seu lead está indo pro concorrente.</h2>
-      <p class="problem-body">Portal divide seu lead com 10 corretores.
-Indicação depende de mês bom.
-Plantão? O cliente é da construtora, não seu.
-
-Anúncio próprio no Meta Ads é o único canal onde o lead chega direto no seu WhatsApp e continua sendo seu depois do lançamento, do mês ruim, da entressafra.</p>
-      <p class="problem-highlight">O problema não é o mercado. É a estrutura do seu anúncio.</p>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="section section-alt border-top-orange reveal" id="processo">
-  <div class="container">
-    <h2 class="display" style="font-size:clamp(32px,5vw,48px); margin-bottom:56px;">Como funciona</h2>
-    <div class="steps">
-      <div class="step">
-        <h3 class="step-title">Roteiro e vídeo</h3>
-        <p class="step-body">Criamos juntos o roteiro de 3 vídeos focados no seu cliente, não no público geral. Eu escrevo, você grava. Edição profissional inclusa.</p>
-      </div>
-      <div class="step">
-        <h3 class="step-title">Configuração</h3>
-        <p class="step-body">Sessão ao vivo via Meet. Abrimos seu Gerenciador de Anúncios juntos. Você vê cada clique, cada real, cada decisão. Nada acontece sem você saber.</p>
-      </div>
-      <div class="step">
-        <h3 class="step-title">Campanha no ar</h3>
-        <p class="step-body">Pixel instalado corretamente, público configurado, anúncios no ar. Estrutura para gerar conversa no seu WhatsApp, não lead genérico, não formulário frio.</p>
-      </div>
-      <div class="step">
-        <h3 class="step-title">30 dias ao seu lado</h3>
-        <p class="step-body">Duas reuniões semanais via Meet para analisar as métricas juntos. CPL caindo. Criativos girando. Você aprendendo a ler sua própria campanha.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BÔNUS -->
-<section class="section reveal" id="bonus">
-  <div class="container">
-    <div class="bonus-card">
-      <div class="bonus-tag">Bônus incluso</div>
-      <h2 class="display bonus-title">Análise de atendimento inicial</h2>
-      <p class="bonus-body">Lead de tráfego pago não é lead de indicação.
-Ele não te conhece, não confia ainda e testa se você vai desaparecer em 24 horas.
-
-Como parte da implementação, analiso seu atendimento inicial e te mostro o que ajustar na primeira resposta para dobrar sua taxa de conversão de conversa em visita.</p>
-    </div>
-  </div>
-</section>
-
-<!-- INVESTIMENTO -->
-<section class="section section-alt border-top-orange reveal" id="investimento">
-  <div class="container investment">
-    <div class="price-old">R$ 1.890,00</div>
-    <div class="display price-new">R$ 1.490,00</div>
-    <p class="price-condition">Condição de lançamento &middot; 5 vagas por mês</p>
-    <ul class="investment-list">
-      <li>Roteiro estratégico de 3 vídeos</li>
-      <li>Edição profissional dos 3 vídeos</li>
-      <li>Configuração técnica (pixel + campanha) ao vivo no seu Gerenciador</li>
-      <li>30 dias de acompanhamento &middot; 2 reuniões semanais</li>
-      <li>Bônus: análise do atendimento inicial</li>
-      <li>Verba de anúncios: direto na plataforma, sem intermediário</li>
-    </ul>
-    <p class="investment-note">Campanhas adicionais: + R$ 250,00 por campanha simultânea</p>
-    <a href="https://wa.me/5548988387867?text=Ol%C3%A1%20Arno%2C%20vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20a%20implementa%C3%A7%C3%A3o." target="_blank" class="btn">Quero começar &rarr; Falar no WhatsApp</a>
-  </div>
-</section>
-
-<!-- QUEM SOU EU -->
-<section class="section reveal" id="sobre">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-photo">
-        <div class="photo-frame">
-          <img src="foto2.jpg" alt="Arno Hoberg em produção de conteúdo" class="photo-desktop">
-          <img src="foto3.jpg" alt="Arno Hoberg atendendo como corretor" class="photo-mobile">
-        </div>
-      </div>
-      <div class="about-text">
-        <h2 class="display about-name">Arno Hoberg</h2>
-        <p class="about-role">Especialista em tráfego pago para corretores e imobiliárias.</p>
-        <div class="about-body">
-          <p>Não sou agência. Não pego sua conta e some. Subo a campanha junto com você, no seu Gerenciador, para você ver cada real investido.</p>
-          <p style="color:var(--text); font-weight:600; margin-bottom:12px;">Meu trabalho:</p>
-        </div>
-        <ul class="about-list">
-          <li>Tráfego inteligente: estrutura e gestão no Meta Ads</li>
-          <li>Autoridade digital: roteiros e edição para sua marca pessoal</li>
-          <li>Consultoria comercial: análise do atendimento inicial</li>
+        <h3>Não faz sentido se:</h3>
+        <ul class="qualifica-nao">
+          <li>Você está abrindo a clínica agora e ainda não tem estrutura de atendimento</li>
+          <li>Você quer resultado em uma semana</li>
+          <li>Você não pretende aparecer em vídeo de jeito nenhum</li>
+          <li>Você procura o menor preço de mercado em gestão de tráfego</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="section final-cta reveal" id="contato">
+<!-- 11. QUEM ESTÁ POR TRÁS -->
+<section class="sobre">
   <div class="container">
-    <h2 class="display final-headline">Seu próximo cliente<br>já está no Meta Ads.</h2>
-    <p class="final-sub">Enquanto você lê isso, ele está vendo o anúncio de outro corretor.</p>
-    <a href="https://wa.me/5548988387867?text=Ol%C3%A1%20Arno%2C%20vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20a%20implementa%C3%A7%C3%A3o." target="_blank" onclick="fbq('track', 'Lead');" class="btn">Falar com Arno agora</a>
-    
-    <p class="fine-print">Call de 20 min &middot; Sem custo &middot; Sem compromisso</p>
+    <div class="sobre-foto">
+      <div class="foto-caixa proporcao-4-5">
+        <img src="img/final.jpg" alt="Retrato do gestor de tráfego responsável pelas campanhas" width="480" height="600" loading="lazy"
+          onerror="this.classList.add('ausente')">
+      </div>
+    </div>
+    <div class="sobre-texto">
+      <h2>Quem vai cuidar das suas campanhas.</h2>
+      <!-- [ESCREVER — 3 ou 4 frases, primeira pessoa, sem superlativo: seu nome, há quanto tempo trabalha com tráfego, por que decidiu focar em clínica de estética e por que atende poucas clínicas por vez. Esse bloco é sobre confiança, não sobre currículo.] -->
+      <p>Sou Arno Hoberg. Especialista em tráfego pago a mais de 4 anos e decidi parar de atender qualquer nicho para focar em somente 2, mercado imobiliário e clínica de estética avançada.</p>
+
+<p>O motivo é simples, quando você atende dez segmentos diferentes, entrega o mesmo modelo de campanha pra todo mundo. Quando você atende poucos, você se torna especialista de verdade, aprende como a paciente decide, o que ela pesquisa antes de agendar e o que faz ela confiar em quem vai aplicar.</p>
+
+<p>Por isso trabalho com no máximo quatro clínicas por mês. E isso não é escassez de marketing, é o número que me permite escrever roteiro, editar vídeo e olhar campanha de perto sem entregar nada pela metade.</p>
+      <div>
+        <div class="assinatura-nome">Arno Hoberg</div>
+        <div class="assinatura-cargo">Gestor de tráfego para clínicas de estética avançada.</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- RODAPÉ -->
-<footer class="border-top-orange">
-  <div class="container footer-inner">
-    <img src="logo.png" alt="Arno Hoberg">
-    <p class="footer-copy">&copy; 2026 Arno Hoberg &middot; Especialista em tráfego imobiliário</p>
+<!-- 12. FAQ -->
+<section class="faq bg-neutro">
+  <div class="container" style="max-width:800px;">
+    <h2 style="margin-bottom:8px;">Perguntas frequentes.</h2>
+    <details>
+      <summary>Eu já tentei anunciar e não deu certo. Por que agora seria diferente?</summary>
+      <p class="resposta">Porque a maior parte das campanhas que não dão certo falha antes do anúncio: criativo genérico e oferta que atrai quem busca preço. Antes de subir qualquer campanha eu faço o diagnóstico da sua clínica e construo o criativo em cima do seu procedimento e do seu público. E se o problema estiver no atendimento, eu aponto.</p>
+    </details>
+    <details>
+      <summary>Quanto custa?</summary>
+      <p class="resposta">O fee é mensal e fixo, definido na reunião de alinhamento, depois que eu entendo o tamanho da operação e o objetivo. O investimento em anúncio é separado e vai direto para o Meta — esse valor também sai da reunião, de acordo com a sua meta e a sua capacidade de agenda.</p>
+    </details>
+    <details>
+      <summary>Preciso mesmo aparecer nos vídeos?</summary>
+      <p class="resposta">É o formato que mais converte em estética, porque a decisão da paciente passa por confiar em quem aplica. Você recebe o roteiro pronto, grava no celular e me manda o bruto. Se aparecer não for uma opção, a gente conversa sobre alternativas na reunião, mas eu prefiro ser honesto: o resultado costuma ser menor.</p>
+    </details>
+    <details>
+      <summary>Quanto tempo até aparecer resultado?</summary>
+      <p class="resposta">As primeiras conversas costumam aparecer nos primeiros dias. Campanha estabilizada, com custo por lead previsível, normalmente leva de 30 a 60 dias, porque depende de volume de dados para otimizar.</p>
+    </details>
+    <details>
+      <summary>Você atende clínicas de qualquer cidade?</summary>
+      <p class="resposta">Sim, o trabalho é todo online. A campanha é configurada para a região onde a sua clínica atende.</p>
+    </details>
+    <details>
+      <summary>Você atende clínica concorrente na mesma cidade?</summary>
+      <!-- [CONFIRME SE ESSA É REALMENTE A SUA REGRA ANTES DE PUBLICAR] -->
+      <p class="resposta">Não. Uma clínica por cidade dentro do mesmo tipo de procedimento.</p>
+    </details>
+    <details>
+      <summary>Tem fidelidade?</summary>
+      <!-- [RESPONDER — ex: contrato mínimo de 3 meses, porque é o tempo mínimo para a campanha maturar] -->
+      <p class="resposta">Contrato mínimo de 3 meses, porque é o tempo mínimo que precisamos para as campanhas performarem perfeitamente.</p>
+    </details>
+  </div>
+</section>
+
+<!-- 13. CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Vamos olhar a sua clínica antes de falar de anúncio.</h2>
+    <p>Na reunião online eu entendo o seu procedimento principal, sua agenda e seu atendimento. Saindo de lá você tem um plano e o investimento recomendado, mesmo que a gente não feche.</p>
+    <a href="#" class="btn btn-grande" data-whats="cta_final">Quero falar sobre a minha clínica</a>
+    <p class="hero-nota">Restam <span data-vagas-restantes></span> vagas para <span data-mes></span>.</p>
+  </div>
+</section>
+
+<!-- 14. RODAPÉ -->
+<footer>
+  <div class="container">
+    <img src="img/logo.png" alt="Arno Hoberg" onerror="this.style.display='none'">
+    <p class="copy" data-copyright></p>
   </div>
 </footer>
 
-<!-- BOTÃO FLUTUANTE WHATSAPP -->
-<a href="https://wa.me/5548988387867?text=Ol%C3%A1%20Arno%2C%20vi%20seu%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20a%20implementa%C3%A7%C3%A3o." target="_blank" onclick="fbq('track', 'Lead');" class="whatsapp-float">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<!-- 15. BOTÃO FLUTUANTE DO WHATSAPP -->
+<a href="#" class="whats-flutuante" data-whats="flutuante" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true">
     <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38a9.96 9.96 0 0 0 4.79 1.22h.01c5.52 0 10-4.48 10-10s-4.48-10-10.01-10zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.18 8.18 0 0 1-1.25-4.35c0-4.52 3.68-8.2 8.21-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.2-8.19 8.2zm4.49-6.15c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.63.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.24-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14 0-.31-.02-.47-.02s-.43.06-.66.31c-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.66-1.17.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/>
   </svg>
-  Falar agora
 </a>
 
+<div class="lightbox" id="lightbox">
+  <button type="button" class="lightbox-fechar" aria-label="Fechar">&times;</button>
+  <img src="" alt="Print ampliado do gerenciador de anúncios" id="lightbox-img">
+</div>
+
 <script>
+  // ---------------------------------------------------------------
+  // BLOCO DE CONFIGURAÇÃO — edite só aqui
+  // ---------------------------------------------------------------
+  const CONFIG = {
+    whatsapp: "5548988387867",           // só números, com código do país e DDD
+    mensagem: "Olá Arno, tenho interesse em tráfego pago para a minha clínica.",
+    pixelId: "SEU_PIXEL_ID",             // mantenha igual ao valor usado no <head>
+    vagasTotais: 4,
+    vagasRestantes: 2,
+    mes: "outubro"
+  };
+  // ---------------------------------------------------------------
+
   (function(){
-    var revealEls = document.querySelectorAll('.reveal');
-    if(!('IntersectionObserver' in window)){
-      revealEls.forEach(function(el){ el.classList.add('visible'); });
-      return;
-    }
-    var observer = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+    const linkWhats = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(CONFIG.mensagem);
+
+    // Preenche todos os botões/links de WhatsApp e dispara o pixel de Lead na origem certa
+    document.querySelectorAll('[data-whats]').forEach(function(el){
+      el.setAttribute('href', linkWhats);
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener');
+      el.addEventListener('click', function(){
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', { content_name: el.getAttribute('data-whats') });
         }
       });
-    }, { threshold: 0.15 });
-    revealEls.forEach(function(el){ observer.observe(el); });
+    });
+
+    // Preenche vagas, mês e copyright a partir do CONFIG
+    document.querySelectorAll('[data-vagas-totais]').forEach(function(el){ el.textContent = CONFIG.vagasTotais; });
+    document.querySelectorAll('[data-vagas-restantes]').forEach(function(el){ el.textContent = CONFIG.vagasRestantes; });
+    document.querySelectorAll('[data-mes]').forEach(function(el){ el.textContent = CONFIG.mes; });
+    const copy = document.querySelector('[data-copyright]');
+    if (copy) copy.textContent = '© ' + new Date().getFullYear() + ' Arno Hoberg';
+
+    // Botão flutuante: aparece só depois que o usuário rola além do hero
+    const flutuante = document.querySelector('.whats-flutuante');
+    const hero = document.querySelector('.hero');
+    if (flutuante && hero && 'IntersectionObserver' in window) {
+      const obs = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          flutuante.classList.toggle('visivel', !entry.isIntersecting);
+        });
+      }, { threshold: 0 });
+      obs.observe(hero);
+    }
+
+    // Animação de entrada só no bloco de prova, uma vez, respeitando prefers-reduced-motion
+    const prova = document.querySelector('.prova-reveal');
+    const semMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prova && !semMovimento && 'IntersectionObserver' in window) {
+      const obsProva = new IntersectionObserver(function(entries, observer){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visivel');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      obsProva.observe(prova);
+    } else if (prova) {
+      prova.classList.add('visivel');
+    }
+
+    // Lightbox dos prints — abre no clique, fecha no clique fora ou na tecla Esc
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    document.querySelectorAll('[data-lightbox]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        lightboxImg.src = btn.getAttribute('data-lightbox');
+        lightbox.classList.add('aberto');
+      });
+    });
+    function fecharLightbox(){
+      lightbox.classList.remove('aberto');
+      lightboxImg.src = '';
+    }
+    lightbox.addEventListener('click', function(e){
+      if (e.target === lightbox || e.target.classList.contains('lightbox-fechar')) fecharLightbox();
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') fecharLightbox();
+    });
   })();
 </script>
 </body>
